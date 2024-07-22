@@ -26,7 +26,7 @@ services:
       WORDPRESS_DB_HOST: ihs_db
       WORDPRESS_DB_USER: $MYSQL_USER
       WORDPRESS_DB_PASSWORD: $MYSQL_PASSWORD
-      WORDPRESS_TABLE_PREFIX: wp_
+      WORDPRESS_TABLE_PREFIX: ihs_
     container_name: ihs_wp
     volumes:
       - ./wp-content:/var/www/html/wp-content
