@@ -1,4 +1,7 @@
 <aside id="mainSidebar">
 	<h1>School Information</h1>
-	<?= do_shortcode(get_post(15988)->post_content) ?>
+	<?php
+	$page_content = get_post(15988);
+	echo do_shortcode($page_content->post_content);
+	?>
 </aside>
