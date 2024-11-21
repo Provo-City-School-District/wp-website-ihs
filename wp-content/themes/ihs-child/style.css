@@ -14,17 +14,17 @@
 Variables
 ================================================================================================================*/
 :root {
+	--primary-color: #003F85;
+	--secondary-color: #D8D9DA;
+	--accent-color: #ffffff;
+	--link-color: #543D08;
+	--link-hover-color: #393B3C;
+	--content-text: #003F85;
 	--theme-white: #fff;
 	--theme-black: #000;
 	--theme-gray: #ccc;
 	--even-tile-bg-color: #e1e9f4;
 	--odd-tile-bg-color: #cddbee;
-	--primary-color: #007aff;
-	--secondary-color: #a5a9a9;
-	--accent-color: #ffffff;
-	--link-color: #543D08;
-	--link-hover-color: #534D08;
-	--content-text: #003F85;
 }
 
 
@@ -329,7 +329,7 @@ Main Menu
 }
 
 #mainMenu>ul>li>a {
-	color: var(--link-color);
+	color: var(--theme-white);
 }
 
 #mainMenu>ul>li>a:hover {
@@ -439,6 +439,19 @@ Content Area
 		padding: 10px 3%;
 		margin-bottom: 140px;
 	}
+}
+
+/*================================================================================================================
+sidebar Area
+================================================================================================================*/
+
+#mainSidebar a {
+	color: var(--theme-white);
+}
+
+#mainSidebar a:hover,
+.imagelist li a:hover span {
+	color: var(--link-hover-color);
 }
 
 /*================================================================================================================
